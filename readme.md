@@ -70,7 +70,7 @@ Acknowledgments
 
 ▸ **mergeSorted**<`T`>(a: *`T`[]*, b: *`T`[]*, comparator: *`function`*): `T`[]
 
-*Defined in [merge-sorted.ts:18](https://github.com/strong-roots-capital/merge-sorted/blob/1a6c794/src/merge-sorted.ts#L18)*
+*Defined in [merge-sorted.ts:18](https://github.com/strong-roots-capital/merge-sorted/blob/586146f/src/merge-sorted.ts#L18)*
 
 Merged two sorted arrays in O(n) time and O(n) space.
 
