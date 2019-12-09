@@ -1,6 +1,6 @@
 {
     "name": "@strong-roots-capital/merge-sorted",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "Merge two sorted arrays in O(n) time and O(n) space",
     "main": "dist/src/merge-sorted.js",
     "types": "dist/src/merge-sorted.d.ts",
@@ -39,8 +39,7 @@
         "url": "https://github.com/strong-roots-capital/merge-sorted/issues"
     },
     "homepage": "https://github.com/strong-roots-capital/merge-sorted",
-    "dependencies": {
-    },
+    "dependencies": {},
     "devDependencies": {
         "@types/node": "^12.12.7",
         "@typescript-eslint/eslint-plugin": "^2.6.0",
