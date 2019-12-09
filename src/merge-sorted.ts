@@ -34,7 +34,7 @@ export default function mergeSorted<T>(
         const isArr1Depleted = indexA >= a.length
         const isArr2Depleted = indexB >= b.length
 
-        if (!isArr1Depleted && isArr2Depleted || comparator(a[indexA], b[indexB]) < 0) {
+        if (!isArr1Depleted && (isArr2Depleted || comparator(a[indexA], b[indexB]) < 0)) {
             merged[current] = a[indexA]
             indexA++
         } else {
