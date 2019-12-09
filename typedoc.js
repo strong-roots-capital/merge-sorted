@@ -1,6 +1,6 @@
 module.exports = {
     src: [
-        './src/merge-sort.ts',
+        './src/merge-sorted.ts',
     ],
     exclude: [
         './node_modules/**/*',

@@ -1,5 +1,5 @@
 /**
- * merge-sort
+ * merge-sorted
  * Merge two sorted arrays
  */
 
@@ -15,7 +15,7 @@
  * @param comparator Function used to sort elements of input arrays
  * @returns Sorted array containing all elements of `a` and `b`
  */
-export default function mergesort<T>(
+export default function mergeSorted<T>(
     a: T[],
     b: T[],
     comparator: (a: T, b: T) => number

@@ -1,6 +1,6 @@
 
-merge-sort [![Build status](https://travis-ci.org/strong-roots-capital/merge-sort.svg?branch=master)](https://travis-ci.org/strong-roots-capital/merge-sort) [![npm version](https://img.shields.io/npm/v/@strong-roots-capital/merge-sort.svg)](https://npmjs.org/package/@strong-roots-capital/merge-sort) [![codecov](https://codecov.io/gh/strong-roots-capital/merge-sort/branch/master/graph/badge.svg)](https://codecov.io/gh/strong-roots-capital/merge-sort)
-=====================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+merge-sorted [![Build status](https://travis-ci.org/strong-roots-capital/merge-sorted.svg?branch=master)](https://travis-ci.org/strong-roots-capital/merge-sorted) [![npm version](https://img.shields.io/npm/v/@strong-roots-capital/merge-sorted.svg)](https://npmjs.org/package/@strong-roots-capital/merge-sorted) [![codecov](https://codecov.io/gh/strong-roots-capital/merge-sorted/branch/master/graph/badge.svg)](https://codecov.io/gh/strong-roots-capital/merge-sorted)
+===================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
 
 > Merge two sorted arrays in O(n) time and O(n) space
 
@@ -8,14 +8,14 @@ Install
 -------
 
 ```shell
-npm install @strong-roots-capital/merge-sort
+npm install @strong-roots-capital/merge-sorted
 ```
 
 Use
 ---
 
 ```typescript
-import merge-sort from '@strong-roots-capital/merge-sort'
+import mergeSorted from '@strong-roots-capital/merge-sorted'
 
 function compareNumber(a: number, b: number): number {
     return a - b
@@ -28,7 +28,7 @@ test('should merge two sorted arrays of same length', t => {
 
     t.deepEqual(
         [1, 2, 3, 4, 5, 6],
-        mergesort(a, b, compareNumber)
+        mergeSorted(a, b, compareNumber)
     )
 })
 
@@ -39,13 +39,13 @@ test('should merge two sorted arrays of different lengths', t => {
 
     t.deepEqual(
         [1, 2, 3, 4, 5, 6],
-        mergesort(a, b, compareNumber)
+        mergeSorted(a, b, compareNumber)
     )
 })
 
 test('should return empty array when both inputs are empty', t => {
 
-    t.deepEqual([], mergesort([], [], compareNumber))
+    t.deepEqual([], mergeSorted([], [], compareNumber))
 })
 ```
 
@@ -58,19 +58,19 @@ Acknowledgments
 
 ### Functions
 
-* [mergesort](#mergesort)
+* [mergeSorted](#mergesorted)
 
 ---
 
 ## Functions
 
-<a id="mergesort"></a>
+<a id="mergesorted"></a>
 
-###  mergesort
+###  mergeSorted
 
-▸ **mergesort**<`T`>(a: *`T`[]*, b: *`T`[]*, comparator: *`function`*): `T`[]
+▸ **mergeSorted**<`T`>(a: *`T`[]*, b: *`T`[]*, comparator: *`function`*): `T`[]
 
-*Defined in [merge-sort.ts:18](https://github.com/strong-roots-capital/merge-sort/blob/1df63c5/src/merge-sort.ts#L18)*
+*Defined in [merge-sorted.ts:18](https://github.com/strong-roots-capital/merge-sorted/blob/1a6c794/src/merge-sorted.ts#L18)*
 
 Merged two sorted arrays in O(n) time and O(n) space.
 

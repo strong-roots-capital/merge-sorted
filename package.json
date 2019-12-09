@@ -1,9 +1,9 @@
 {
-    "name": "@strong-roots-capital/merge-sort",
+    "name": "@strong-roots-capital/merge-sorted",
     "version": "0.0.1",
-    "description": "Implementation of merge-sort in TypeScript",
-    "main": "dist/src/merge-sort.js",
-    "types": "dist/src/merge-sort.d.ts",
+    "description": "Merge two sorted arrays in O(n) time and O(n) space",
+    "main": "dist/src/merge-sorted.js",
+    "types": "dist/src/merge-sorted.d.ts",
     "scripts": {
         "prepublishOnly": "npm run clean && npm run compile",
         "compile": "tsc",
@@ -26,7 +26,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/strong-roots-capital/merge-sort.git"
+        "url": "git+https://github.com/strong-roots-capital/merge-sorted.git"
     },
     "keywords": [
         "mergesort",
@@ -36,9 +36,9 @@
     "author": "Eric Crosson <eric.s.crosson@utexas.edu> (https://github.com/strong-roots-capital)",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/strong-roots-capital/merge-sort/issues"
+        "url": "https://github.com/strong-roots-capital/merge-sorted/issues"
     },
-    "homepage": "https://github.com/strong-roots-capital/merge-sort",
+    "homepage": "https://github.com/strong-roots-capital/merge-sorted",
     "dependencies": {
     },
     "devDependencies": {

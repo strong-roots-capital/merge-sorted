@@ -4,7 +4,7 @@ import test from 'ava'
  * Library under test
  */
 
-import mergesort from '../src/merge-sort'
+import mergeSorted from '../src/merge-sorted'
 
 
 function compareNumber(a: number, b: number): number {
@@ -19,7 +19,7 @@ test('should merge two sorted arrays of same length', t => {
 
     t.deepEqual(
         [1, 2, 3, 4, 5, 6],
-        mergesort(a, b, compareNumber)
+        mergeSorted(a, b, compareNumber)
     )
 })
 
@@ -30,11 +30,11 @@ test('should merge two sorted arrays of different lengths', t => {
 
     t.deepEqual(
         [1, 2, 3, 4, 5, 6],
-        mergesort(a, b, compareNumber)
+        mergeSorted(a, b, compareNumber)
     )
 })
 
 test('should return empty array when both inputs are empty', t => {
 
-    t.deepEqual([], mergesort([], [], compareNumber))
+    t.deepEqual([], mergeSorted([], [], compareNumber))
 })
