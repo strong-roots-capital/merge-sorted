@@ -1,6 +1,6 @@
 {
     "name": "@strong-roots-capital/merge-sorted",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Merge two sorted arrays in O(n) time and O(n) space",
     "main": "dist/src/merge-sorted.js",
     "types": "dist/src/merge-sorted.d.ts",
