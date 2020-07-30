@@ -1,10 +1,4 @@
 /**
- * merge-sorted
- * Merge two sorted arrays
- */
-
-
-/**
  * Merged two sorted arrays in O(n) time and O(n) space.
  *
  * @remarks

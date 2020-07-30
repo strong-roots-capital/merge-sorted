@@ -44,15 +44,19 @@ test('should merge two sorted arrays of different lengths', t => {
 })
 
 test('should return empty array when both inputs are empty', t => {
-
     t.deepEqual([], mergeSorted([], [], compareNumber))
 })
 ```
 
+Contributors
+------------
+
+*   [Alexey Gusev](https://github.com/mad-gooze)
+
 Acknowledgments
 ---------------
 
-*   All credits to William Vincent's [blog post](https://wsvincent.com/javascript-merge-two-sorted-arrays/)
+*   Many thanks to William Vincent's [blog post](https://wsvincent.com/javascript-merge-two-sorted-arrays/)
 
 ## Index
 
@@ -70,7 +74,7 @@ Acknowledgments
 
 ▸ **mergeSorted**<`T`>(a: *`T`[]*, b: *`T`[]*, comparator: *`function`*): `T`[]
 
-*Defined in [merge-sorted.ts:18](https://github.com/strong-roots-capital/merge-sorted/blob/586146f/src/merge-sorted.ts#L18)*
+*Defined in [merge-sorted.ts:12](https://github.com/strong-roots-capital/merge-sorted/blob/b303f3a/src/merge-sorted.ts#L12)*
 
 Merged two sorted arrays in O(n) time and O(n) space.
 

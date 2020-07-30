@@ -2,7 +2,6 @@
 
 > Merge two sorted arrays in O(n) time and O(n) space
 
-
 ## Install
 
 ```shell
@@ -14,11 +13,9 @@ npm install @strong-roots-capital/merge-sorted
 ```typescript
 import mergeSorted from '@strong-roots-capital/merge-sorted'
 
-
 function compareNumber(a: number, b: number): number {
     return a - b
 }
-
 
 test('should merge two sorted arrays of same length', t => {
 
@@ -43,11 +40,14 @@ test('should merge two sorted arrays of different lengths', t => {
 })
 
 test('should return empty array when both inputs are empty', t => {
-
     t.deepEqual([], mergeSorted([], [], compareNumber))
 })
 ```
 
+## Contributors
+
+- [Alexey Gusev](https://github.com/mad-gooze)
+
 ## Acknowledgments
 
-- All credits to William Vincent's [blog post](https://wsvincent.com/javascript-merge-two-sorted-arrays/)
+- Many thanks to William Vincent's [blog post](https://wsvincent.com/javascript-merge-two-sorted-arrays/)
