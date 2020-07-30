@@ -21,13 +21,12 @@ export default function mergeSorted<T>(
     comparator: (a: T, b: T) => number
 ): T[] {
 
-    const merged: T[] = []
+    const combinedLength = a.length + b.length
+    const merged: T[] = new Array(combinedLength)
 
     let indexA = 0
     let indexB = 0
     let current = 0
-
-    const combinedLength = a.length + b.length
 
     while (current < combinedLength) {
 
