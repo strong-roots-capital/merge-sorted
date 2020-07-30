@@ -1,18 +1,14 @@
-
-merge-sorted [![Build status](https://travis-ci.org/strong-roots-capital/merge-sorted.svg?branch=master)](https://travis-ci.org/strong-roots-capital/merge-sorted) [![npm version](https://img.shields.io/npm/v/@strong-roots-capital/merge-sorted.svg)](https://npmjs.org/package/@strong-roots-capital/merge-sorted) [![codecov](https://codecov.io/gh/strong-roots-capital/merge-sorted/branch/master/graph/badge.svg)](https://codecov.io/gh/strong-roots-capital/merge-sorted)
-===================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+# merge-sorted [![Build status](https://travis-ci.org/strong-roots-capital/merge-sorted.svg?branch=master)](https://travis-ci.org/strong-roots-capital/merge-sorted) [![npm version](https://img.shields.io/npm/v/@strong-roots-capital/merge-sorted.svg)](https://npmjs.org/package/@strong-roots-capital/merge-sorted) [![codecov](https://codecov.io/gh/strong-roots-capital/merge-sorted/branch/master/graph/badge.svg)](https://codecov.io/gh/strong-roots-capital/merge-sorted)
 
 > Merge two sorted arrays in O(n) time and O(n) space
 
-Install
--------
+## Install
 
 ```shell
 npm install @strong-roots-capital/merge-sorted
 ```
 
-Use
----
+## Use
 
 ```typescript
 import mergeSorted from '@strong-roots-capital/merge-sorted'
@@ -48,51 +44,49 @@ test('should return empty array when both inputs are empty', t => {
 })
 ```
 
-Contributors
-------------
+## Contributors
 
-*   [Alexey Gusev](https://github.com/mad-gooze)
+- [Alexey Gusev](https://github.com/mad-gooze)
 
-Acknowledgments
----------------
+## Acknowledgments
 
-*   Many thanks to William Vincent's [blog post](https://wsvincent.com/javascript-merge-two-sorted-arrays/)
+- Many thanks to William Vincent's [blog post](https://wsvincent.com/javascript-merge-two-sorted-arrays/)
 
 ## Index
 
 ### Functions
 
-* [mergeSorted](#mergesorted)
-
----
+* [mergeSorted](README.md#mergesorted)
 
 ## Functions
 
-<a id="mergesorted"></a>
-
 ###  mergeSorted
 
-▸ **mergeSorted**<`T`>(a: *`T`[]*, b: *`T`[]*, comparator: *`function`*): `T`[]
+▸ **mergeSorted**‹**T**›(`a`: T[], `b`: T[], `comparator`: function): *T[]*
 
-*Defined in [merge-sorted.ts:12](https://github.com/strong-roots-capital/merge-sorted/blob/b303f3a/src/merge-sorted.ts#L12)*
-
-Merged two sorted arrays in O(n) time and O(n) space.
-
-*__remarks__*: Behavior is undefined when input-arrays are not already sorted.
+*Defined in [merge-sorted.ts:12](https://github.com/strong-roots-capital/merge-sorted/blob/4dc5463/src/merge-sorted.ts#L12)*
 
 **Type parameters:**
 
-#### T 
+▪ **T**
+
 **Parameters:**
 
-| Name | Type | Description |
-| ------ | ------ | ------ |
-| a | `T`[] |  One sorted array to be merged with \`b\` |
-| b | `T`[] |  One sorted array to be merged with \`a\` |
-| comparator | `function` |  Function used to sort elements of input arrays |
+▪ **a**: *T[]*
 
-**Returns:** `T`[]
+▪ **b**: *T[]*
+
+▪ **comparator**: *function*
+
+▸ (`a`: T, `b`: T): *number*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`a` | T |
+`b` | T |
+
+**Returns:** *T[]*
+
 Sorted array containing all elements of `a` and `b`
-
-___
-
